@@ -11,6 +11,14 @@
  */
 //#include "../usermods/EXAMPLE_v2/usermod_v2_example.h"
 
+// Lune usermods — wake must be included before touch (touch depends on LuneWake namespace)
+#ifdef WLED_ENABLE_LUNE_WAKE
+  #include "../usermods/lune_wake/lune_wake.h"
+#endif
+#ifdef WLED_ENABLE_LUNE_TOUCH
+  #include "../usermods/lune_touch/lune_touch.h"
+#endif
+
 #ifdef USERMOD_BATTERY
   #include "../usermods/Battery/usermod_v2_Battery.h"
 #endif
@@ -212,6 +220,13 @@ void registerUsermods()
    * \/ \/ \/
    */
   //usermods.add(new MyExampleUsermod());
+
+  #ifdef WLED_ENABLE_LUNE_WAKE
+  usermods.add(new LuneWakeUsermod());
+  #endif
+  #ifdef WLED_ENABLE_LUNE_TOUCH
+  usermods.add(new LuneTouchUsermod());
+  #endif
   #ifdef USERMOD_BATTERY
   usermods.add(new UsermodBattery());
   #endif

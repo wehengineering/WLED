@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "author": "Lune",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel-strip",
+      "id": "leds",
+      "top": 320,
+      "left": 0,
+      "attrs": { "count": "143" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnL",
+      "top": 300,
+      "left": 0,
+      "attrs": { "color": "red", "label": "Left pad" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnC",
+      "top": 300,
+      "left": 100,
+      "attrs": { "color": "green", "label": "Centre pad" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btnR",
+      "top": 300,
+      "left": 200,
+      "attrs": { "color": "blue", "label": "Right pad" }
+    }
+  ],
+  "connections": [
+    ["esp:GND.1",  "leds:GND", "black",  []],
+    ["esp:3V3",    "leds:VCC", "red",    []],
+    ["esp:D2",     "leds:DIN", "green",  []],
+
+    ["esp:D4",     "btnL:1.l", "yellow", []],
+    ["esp:GND.2",  "btnL:2.l", "black",  []],
+
+    ["esp:D13",    "btnC:1.l", "yellow", []],
+    ["esp:GND.2",  "btnC:2.l", "black",  []],
+
+    ["esp:D14",    "btnR:1.l", "yellow", []],
+    ["esp:GND.2",  "btnR:2.l", "black",  []]
+  ]
+}

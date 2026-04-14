@@ -1,0 +1,1 @@
+{"hw":{"led":{"ins":[{"pin":[2],"type":22,"start":0,"len":143,"order":1,"rev":false,"skip":0,"rgbwm":255}]},"btn":{"ins":[{"type":0,"pin":[4],"macros":[0,0,0]},{"type":0,"pin":[13],"macros":[0,0,0]},{"type":0,"pin":[14],"macros":[0,0,0]}]}},"if":{"live":{"en":false}},"light":{"scale-bri":1,"paletteBlend":0,"pal":0,"aseg":false},"def":{"ps":1,"on":true,"bri":128}}

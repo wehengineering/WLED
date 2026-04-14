@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = '/Users/will/Projects/lune/firmware/wled/.pio/build/wokwi/firmware.bin'
+elf     = '/Users/will/Projects/lune/firmware/wled/.pio/build/wokwi/firmware.elf'

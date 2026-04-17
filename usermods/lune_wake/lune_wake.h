@@ -24,8 +24,8 @@ struct WakeKeyframe {
 };
 
 static const WakeKeyframe WAKE_SEQUENCE[] = {
-  {           0,   2,  4, 0, 0 }, // candlelight ember — barely visible
-  {  300000UL,   12, 18, 0, 0 }, // candlelight amber (scaled in sim)
+  {           0,  15, 20, 0, 0 }, // candlelight ember
+  {  300000UL,   40, 15, 0, 0 }, // deep amber
   {  600000UL,   80,  8, 0, 0 }, // soft warm white
   { 1200000UL,  160,  3, 0, 0 }, // bright warm white
   { 1800000UL,  220,  0, 0, 0 }, // full clean warm white
